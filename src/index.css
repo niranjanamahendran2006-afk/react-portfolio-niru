@@ -10,7 +10,7 @@
     --text: #160F0C;
     --light: #f3cdde;
     --white: #e8cee5;
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-main: "Lora", serif;
 
 }
 html, body, #root {
