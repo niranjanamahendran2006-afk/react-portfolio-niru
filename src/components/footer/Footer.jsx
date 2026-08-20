@@ -5,7 +5,7 @@ function Footer(){
     return(
         <footer className='site-footer'>
             <p>
-        &copy;{year} niranjana mahendran. Built with React🌐
+        &copy;{year} Niranjana. Built with React🌐❤️
     </p>
         </footer>
     )
