@@ -1,5 +1,5 @@
 .project-card {
-  background: #ffffff;
+  background: #cebedc;
   border: 1px solid rgba(15, 76, 132, 0.08);
   border-radius: 28px;
   overflow: hidden;
@@ -53,6 +53,6 @@ body[data-theme="dark"] .project-card p {
 }
 
 body[data-theme="dark"] .tag {
-  background: #F18F01;
+  background: #eeaac3;
   color: #ffffff;
 }

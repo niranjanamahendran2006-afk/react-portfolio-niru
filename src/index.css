@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 :root {
-    --primary: #1B4F72;
-    --accent: #F18F01;
-    --text: #2C3E50;
-    --light: #F4F6F8;
-    --white: #FFFFFF;
+    --primary: #3b2349;
+    --accent: #bf567d;
+    --text: #160F0C;
+    --light: #f3cdde;
+    --white: #e8cee5;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -140,7 +140,7 @@ body[data-theme="dark"] .nav-links a {
 
 body[data-theme="dark"] .nav-links a:hover,
 body[data-theme="dark"] .nav-links a.active {
-    color: #F18F01;
+    color: #75619d;
 }
 
 
@@ -158,7 +158,7 @@ body[data-theme="dark"] .hero-section {
 
 /* Highlight */
 body[data-theme="dark"] .highlight {
-    color: #F18F01;
+    color: #9f6496;
 }
 
 
@@ -171,7 +171,7 @@ body[data-theme="dark"] .skills-section {
 body[data-theme="dark"] .skill-item {
     background: #242424;
     color: #ffffff;
-    border-color: #F18F01;
+    border-color: #9f6496;
 }
 
 /* GitHub Stats Dark */
@@ -188,7 +188,7 @@ body[data-theme="dark"] .skill-card {
     color: #ffffff;
 }
 body[data-theme="dark"] .skill-name { color: #ffffff; }
-body[data-theme="dark"] .skill-level { color: #F18F01; }
+body[data-theme="dark"] .skill-level { color: #9f6496; }
 
 /* Contact */
 body[data-theme="dark"] .contact-section {
@@ -218,7 +218,7 @@ body[data-theme="dark"] label {
 
 /* Buttons */
 body[data-theme="dark"] .btn-primary {
-    background: #F18F01;
+    background: #9f6496;
     color: #ffffff;
 }
 
@@ -248,7 +248,7 @@ body[data-theme="dark"] .site-footer a {
 
 
 body[data-theme="dark"] .site-footer a:hover {
-    color: #F18F01;
+    color: #9f6496;
 }
 
 
