@@ -15,8 +15,8 @@ githubUrl: 'https://github.com/niranjanamahendran2006-afk/tempchat'
 {
 id: 2,
 title: 'Portfolio Site',
-description: 'This very portfolio website',
-longDesc: 'A multi-page React portfolio with routing, dark mode, and live GitHub stats.',
+description: 'A creative and interactive personal portfolio',
+longDesc: 'A creative and interactive personal portfolio showcasing Niranjana Mahendran’s skills, projects, achievements, interests, and journey as a Computer Science student, brought to life with a dreamy spring-inspired design and subtle animations.',
 tech: ['React', 'CSS'],
 category: 'web',
 featured: true,
