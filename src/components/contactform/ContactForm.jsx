@@ -8,11 +8,42 @@ function ContactForm() {
     const [errors, setErrors] = useState({});
     const [status, setStatus] = useState('idle'); // 'idle', 'sending', or 'success'
 
-    function handleChange(event) {
-        const { name, value } = event.target;
-        setFields(prev => ({ ...prev, [name]: value }));
-        setErrors(prev => ({ ...prev, [name]: '' }));
+   async function handleSubmit(event) {
+    event.preventDefault();
+
+    if (!validateForm()) {
+        return;
     }
+
+    setStatus('sending');
+
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify({
+                access_key: '1b7ed72c-3a49-406b-ae3d-4b55b70dbb9a',
+                name: fields.name,
+                email: fields.email,
+                message: fields.message,
+                subject: `Portfolio message from ${fields.name}`,
+            }),
+        });
+
+        const result = await response.json();
+
+        if (!result.success) {
+            throw new Error('Failed');
+        }
+
+        setStatus('success');
+        setFields({ name: '', email: '', message: '' });
+        setTimeout(() => setStatus('idle'), 3000);
+    } catch (error) {
+        setStatus('idle');
+        setErrors({ message: 'Something went wrong. Please try again.' });
+    }
+}
 
     function validateForm() {
         const newErrors = {};
